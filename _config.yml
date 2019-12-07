@@ -21,7 +21,7 @@
 title: 光之角落 SunnyCorner B&B
 email: contact@sunnycorner.tw
 description: >- # this means to ignore newlines until "baseurl:"
-  TODO
+  光之角落只想給大家一個放鬆的地方，來到花蓮就是要逃離都市的快步調，好好享受這花蓮的慢、靜，讓自己放鬆一下。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sunnycorner.tw" # the base hostname & protocol for your site, e.g. http://example.com
 social:

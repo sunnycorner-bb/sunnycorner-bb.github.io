@@ -1,0 +1,9 @@
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="{{ section.name }}">
+  <div class="content">
+    <h2>{{ section.title }}</h2>
+    {{ section.content | markdownify }}
+  </div>
+  <div class="image">
+    <img src="{{ section.image }}" alt="{{ section.image_description }}" />
+  </div>
+</section>
