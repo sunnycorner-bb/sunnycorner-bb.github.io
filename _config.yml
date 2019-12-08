@@ -33,7 +33,10 @@ plugins:
   #  - jekyll-feed
 
 collections:
-  - sections
+  sections:
+    output: false
+  galleries:
+    output: false
 
 sass:
   load_paths:
