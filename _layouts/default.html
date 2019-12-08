@@ -13,35 +13,14 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      {% for section in site.sections %}
+      <!-- Section -->
+      {% include sections/{{ section.type | default: 'spotlight' }}.html section=section %}
+      {% endfor %}
 
-        {% for section in site.sections %}
-        <!-- Section -->
-        {% include sections/{{ section.type | default: 'spotlight' }}.html section=section %}
-        {% endfor %}
-
-        <section class="wrapper style1 align-center">
-          <div class="inner">
-            <h2>訂房須知</h2>
-            <p>訂房時請依照確切入住人數預訂，光之角落皆為雙人房，僅限兩人入住，恕無法加人加床，無接待6歲以下之孩童入住。住宿時請務必依照預訂之人數前來，若您臨時增加人數，我們將沒收全額訂金，且恕無法接待。為保障權益，請於訂房後2日內匯入訂金。若未能在指定時間內匯出款項者，本民宿自動取消訂房，並不另行通知，不便之處敬請見諒。民宿內未提供寵物住宿服務，如當日依然帶寵物入宿，本民宿保有無條件退宿之權利，並不退還訂金。</p>
-
-            <p>
-             雙人房僅限兩人，恕無開放加人加床，無接待6歲以下之孩童入住，無開放寵物入住。
-            </p>
-
-            <p>
-              房間內附有一張Queen Size加大雙人床、盥洗用具、浴巾毛巾、拖鞋、Nespresso 膠囊咖啡機、快煮壺、茶包、電視MOD、無線網路Wi-fi、露臺。
-            </p>
-
-            <p>
-              房價已包含兩份西式早餐，早餐時間為08:00 - 09:30。
-            </p>
-          </div>
-        </section>
-
-        {% include footer.html %}
-
-			</div>
-	</body>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>

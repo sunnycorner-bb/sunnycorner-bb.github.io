@@ -1,0 +1,14 @@
+<section class="wrapper style1 align-center" id="{{ section.name }}">
+  <div class="inner">
+    <h2>{{ section.title }}</h2>
+    {{ section.content | markdownify }}
+    <div class="items style1 medium onscroll-fade-in">
+      {% for service in section.services %}
+      <section>
+        <span class="icon style2 major {{ service.icon }}"></span>
+        <h3>{{ service.name }}</h3>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
