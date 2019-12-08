@@ -11,5 +11,8 @@
   {% assign images = site.galleries | where: "group", section.gallery %}
   <section class="wrapper style1 align-center">
     {% include gallery.html images=images %}
+    {% unless section.hide_divider %}
+      <hr class="visible-in-mobile" />
+    {% endunless %}
   </section>
 {% endif %}

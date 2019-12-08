@@ -17,3 +17,11 @@
     width: 12.5rem;
   }
 }
+
+.visible-in-mobile {
+  display: none;
+
+  @include breakpoint('<=large') {
+    display: block;
+  }
+}
