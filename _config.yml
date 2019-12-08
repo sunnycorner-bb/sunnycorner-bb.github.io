@@ -26,6 +26,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sunnycorner.tw" # the base hostname & protocol for your site, e.g. http://example.com
 social:
   facebook: sunnycorner.bb
+  facebook_page_id: 100427851380805
+  line_link: https://lin.ee/xk7fbT4
+
+google_map_key: AIzaSyB8Y1YIuJ4zq7EBZcXAAqxBEDNDLW326M4
 
 # Build settings
 theme: minima

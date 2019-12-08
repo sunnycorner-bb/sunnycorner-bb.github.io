@@ -22,6 +22,7 @@
 
       {% include footer.html %}
     </div>
+    <div class="fb-customerchat" page_id="{{ site.social.facebook_page_id }}"></div>
 
     <!-- Scripts -->
     <script src="/assets/js/jquery.min.js"></script>
@@ -31,5 +32,49 @@
     <script src="/assets/js/breakpoints.min.js"></script>
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/main.js"></script>
+
+    <!-- TODO: Put into customize scripts -->
+    <script>
+      function initMap(){
+        var latlng={lat:23.976787,lng:121.616496};
+        var mapOptions={
+          zoom:16,
+          center:latlng,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+
+        var markerOptions={
+          position:latlng,
+          map:map
+        }
+
+        var marker = new google.maps.Marker(markerOptions);
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_map_key }}&callback=initMap"type="text/javascript"></script>
+
+    <!-- TODO: Put into customize scripts -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '502857023652134',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v5.0'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 </html>

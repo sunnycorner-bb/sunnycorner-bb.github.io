@@ -7,3 +7,9 @@
     <img src="{{ section.image }}" alt="{{ section.image_description }}" />
   </div>
 </section>
+{% if section.gallery %}
+  {% assign images = site.galleries | where: "group", section.gallery %}
+  <section class="wrapper style1 align-center">
+    {% include gallery.html images=images %}
+  </section>
+{% endif %}
