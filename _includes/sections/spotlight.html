@@ -2,6 +2,14 @@
   <div class="content">
     <h2>{{ section.title }}</h2>
     {{ section.content | markdownify }}
+    {% if section.metadata %}
+      <dl>
+      {% for item in section.metadata %}
+        <dt>{{ item.name }}</dt>
+        <dd class="mobile-adjust">{{ item.content | markdownify }}</dd>
+      {% endfor %}
+      </dl>
+    {% endif %}
   </div>
   <div class="image">
     <img src="{{ section.image }}" alt="{{ section.image_description }}" />

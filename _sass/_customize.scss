@@ -25,3 +25,15 @@
     display: block;
   }
 }
+
+dd {
+  &.mobile-adjust {
+    @include breakpoint('<=large') {
+      margin-left: 0;
+    }
+  }
+
+  &.no-adjust {
+    margin-left: 0;
+  }
+}
