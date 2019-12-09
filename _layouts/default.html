@@ -24,15 +24,6 @@
     </div>
     <div class="fb-customerchat" page_id="{{ site.social.facebook_page_id }}"></div>
 
-    <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.scrollex.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    <script src="/assets/js/browser.min.js"></script>
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
-
     <!-- TODO: Put into customize scripts -->
     <script>
       function initMap(){
@@ -72,9 +63,20 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
+        js.async = true
+        js.defer = true
         js.src = "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script async src="/assets/js/jquery.scrollex.min.js"></script>
+    <script async src="/assets/js/jquery.scrolly.min.js"></script>
+    <script async src="/assets/js/browser.min.js"></script>
+    <script async src="/assets/js/util.js"></script>
+    <script async defer src="/assets/js/main.js"></script>
   </body>
 </html>
