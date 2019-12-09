@@ -34,6 +34,7 @@ google_map_key: AIzaSyB8Y1YIuJ4zq7EBZcXAAqxBEDNDLW326M4
 # Build settings
 theme: minima
 plugins:
+  - jekyll-sitemap
   #  - jekyll-feed
 
 collections:
