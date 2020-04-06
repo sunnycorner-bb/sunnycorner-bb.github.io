@@ -1,6 +1,6 @@
 ---
 title: 參樓雙人房
-position: 5
+position: 2
 type: spotlight-reverse
 name: floor3
 image: "/assets/images/floor3.jpg"
