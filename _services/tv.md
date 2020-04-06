@@ -1,5 +1,5 @@
 ---
-name: 電視MOD
+title: 電視MOD
 icon: solid fa-tv
 position: 5
 ---
