@@ -2,7 +2,7 @@
 title: 肆樓雙人房
 position: 3
 name: floor4
-image: "/assets/images/floor4.jpg"
+image: "/uploads/images/floor4.jpg"
 image_description: 肆樓景觀
 gallery: floor4
 hide_divider: true

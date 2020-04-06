@@ -2,8 +2,8 @@
 <div class="gallery style2 medium lightbox onscroll-fade-in">
   {% for item in images %}
   <article>
-    <a href="/assets/images/gallery/{{ item.full_image }}" class="image">
-      <img src="/assets/images/gallery/{{ item.thumb_image }}" alt="{{ item.alt }}" />
+    <a href="{{ item.full_image }}" class="image">
+      <img src="{{ item.thumb_image }}" alt="{{ item.alt }}" />
     </a>
     <div class="caption">
       <h3>{{ item.title }}</h3>

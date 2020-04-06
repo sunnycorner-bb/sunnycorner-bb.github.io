@@ -2,7 +2,7 @@
 title: 貳樓雙人房
 position: 1
 name: floor2
-image: "/assets/images/floor2.jpg"
+image: "/uploads/images/floor2.jpg"
 image_description: 貳樓景觀
 gallery: floor2
 metadata:

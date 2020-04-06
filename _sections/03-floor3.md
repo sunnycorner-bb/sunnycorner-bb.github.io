@@ -3,7 +3,7 @@ title: 參樓雙人房
 position: 2
 type: spotlight-reverse
 name: floor3
-image: "/assets/images/floor3.jpg"
+image: "/uploads/images/floor3.jpg"
 image_description: 參樓景觀
 gallery: floor3
 metadata:

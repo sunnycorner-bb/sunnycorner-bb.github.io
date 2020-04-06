@@ -2,7 +2,7 @@
 title: 光之角落 SunnyCorner B&B
 position: 0
 type: banner
-image: "/assets/images/header.jpg"
+image: "/uploads/images/header.jpg"
 image_description: 光之角落外觀
 action:
   target: "#booking"
