@@ -1,6 +1,6 @@
 ---
 title: 房間設備
-position: 2
+position: 3
 name: services
 type: services
 services:

@@ -1,6 +1,6 @@
 ---
 title: 訂房須知
-position: 5
+position: 6
 name: booking
 type: booking
 metadata:
