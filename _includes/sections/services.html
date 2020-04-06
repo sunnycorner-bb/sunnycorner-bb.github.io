@@ -3,7 +3,8 @@
     <h2>{{ section.title }}</h2>
     {{ section.content | markdownify }}
     <div class="items style1 medium onscroll-fade-in">
-      {% for service in section.services %}
+      {% assign sorted_services = site.services | sort:"position" %}
+      {% for service in sorted_services %}
       <section>
         <span class="icon style2 major {{ service.icon }}"></span>
         <h3>{{ service.name }}</h3>

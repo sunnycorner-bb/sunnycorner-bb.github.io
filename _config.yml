@@ -11,12 +11,15 @@ collections:
   sections:
     title: Sections
     output: false
+  services:
+    title: 房間設備
+    output: false
   uploads:
     title: Uploads
     output: true
 email: contact@sunnycorner.tw
 description: 光之角落只想給大家一個放鬆的地方，來到花蓮就是要逃離都市的快步調，好好享受這花蓮的慢、靜，讓自己放鬆一下。
-baseurl: 
+baseurl:
 url: https://sunnycorner.tw
 social:
   facebook: sunnycorner.bb
@@ -30,3 +33,10 @@ sass:
   load_paths:
   - _sass
   - _vendor/theme/assets/sass
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      icon: solid fa-bed
+      name: 床
