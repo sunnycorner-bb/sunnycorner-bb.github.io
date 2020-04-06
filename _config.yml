@@ -1,69 +1,32 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
+---
 title: 光之角落 SunnyCorner B&B
+timezone: UTC
+collections:
+  galleries:
+    title: Galleries
+    output: false
+  posts:
+    title: Posts
+    output: true
+  sections:
+    title: Sections
+    output: false
+  uploads:
+    title: Uploads
+    output: true
 email: contact@sunnycorner.tw
-description: >- # this means to ignore newlines until "baseurl:"
-  光之角落只想給大家一個放鬆的地方，來到花蓮就是要逃離都市的快步調，好好享受這花蓮的慢、靜，讓自己放鬆一下。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sunnycorner.tw" # the base hostname & protocol for your site, e.g. http://example.com
+description: 光之角落只想給大家一個放鬆的地方，來到花蓮就是要逃離都市的快步調，好好享受這花蓮的慢、靜，讓自己放鬆一下。
+baseurl: ''
+url: https://sunnycorner.tw
 social:
   facebook: sunnycorner.bb
   facebook_page_id: 100427851380805
   line_link: https://lin.ee/xk7fbT4
-
 google_map_key: AIzaSyB8Y1YIuJ4zq7EBZcXAAqxBEDNDLW326M4
-
-# Build settings
 theme: minima
 plugins:
-  - jekyll-sitemap
-  #  - jekyll-feed
-
-collections:
-  sections:
-    output: false
-  galleries:
-    output: false
-
+- jekyll-sitemap
 sass:
   load_paths:
-    - _sass
-    - _vendor/theme/assets/sass
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - _sass
+  - _vendor/theme/assets/sass

@@ -1,6 +1,6 @@
 ---
-name: location
 title: 交通資訊
+name: location
 type: map
 ---
 
