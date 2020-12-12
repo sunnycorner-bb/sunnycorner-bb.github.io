@@ -10,6 +10,17 @@
         {% endfor %}
       </dl>
     {% endif %}
-    <a href="https://traiwan.com/official/api_booking.php?id=sunnycorner" target="_blank" class="button big wide">開始預訂</a>
+    <hr />
+    <form>
+      <div class="fields">
+        <div class="field">
+          <input type="checkbox" name="term" id="term">
+          <label for="term">我同意訂房須知</label>
+        </div>
+        <div class="field">
+          <a href="https://traiwan.com/official/api_booking.php?id=sunnycorner" target="_blank" class="button big wide disabled" id="booking-button">開始預訂</a>
+        </div>
+      </div>
+    </form>
   </div>
 </section>
