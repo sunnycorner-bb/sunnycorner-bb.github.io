@@ -4,7 +4,13 @@ title = "光之角落 SunnyCorner B&B"
 
 disableKinds = ["taxonomy", "term"]
 
+staticDir = ["static", "vendor/theme/assets"]
+
 [params]
   description = "光之角落只想給大家一個放鬆的地方，來到花蓮就是要逃離都市的快步調，好好享受這花蓮的慢、靜，讓自己放鬆一下。"
 
   googleMapKey = "AIzaSyB8Y1YIuJ4zq7EBZcXAAqxBEDNDLW326M4"
+
+  facebookName = "sunnycorner.bb"
+  lineLink = "https://lin.ee/xk7fbT4"
+  email = "contact@sunnycorner.tw"
