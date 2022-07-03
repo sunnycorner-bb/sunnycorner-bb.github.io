@@ -1,0 +1,17 @@
+{{- $jQuery := resources.Get "js/jquery.min.js" | fingerprint -}}
+{{- $browser := resources.Get "js/browser.min.js" | fingerprint -}}
+{{- $breakpoints := resources.Get "js/breakpoints.min.js" | fingerprint -}}
+{{- $jQueryScrollEx := resources.Get "js/jquery.scrollex.min.js" | fingerprint -}}
+{{- $jQueryScrolly := resources.Get "js/jquery.scrolly.min.js" | fingerprint -}}
+{{- $util := resources.Get "js/util.js" | resources.Minify | fingerprint -}}
+{{- $main := resources.Get "js/main.js" | resources.Minify | fingerprint -}}
+{{- $sweetAlert := resources.GetRemote "https://unpkg.com/sweetalert/dist/sweetalert.min.js" | fingerprint -}}
+<!-- Scripts -->
+<script src="{{ $jQuery.Permalink }}"></script>
+<script src="{{ $browser.Permalink }}"></script>
+<script src="{{ $breakpoints.Permalink }}"></script>
+<script src="{{ $jQueryScrollEx.Permalink }}"></script>
+<script src="{{ $jQueryScrolly.Permalink }}"></script>
+<script src="{{ $util.Permalink }}"></script>
+<script src="{{ $main.Permalink }}"></script>
+<script src="{{ $sweetAlert.Permalink }}"></script>
