@@ -1,0 +1,14 @@
+<section class="wrapper style1 align-center" id="services">
+  <div class="inner">
+    <h2>房間設備</h2>
+    <p>我們的房間都含有以下設備，房價已包含兩份西式早餐，早餐時間為08:00 - 09:30。</p>
+    <div class="items style1 medium onscroll-fade-in">
+      {{ range .Site.Data.services }}
+      <section>
+        <span class="icon style2 major solid {{ .icon }}"></span>
+        <h3>{{ .name }}</h3>
+      </section>
+      {{ end }}
+    </div>
+  </div>
+</section>
