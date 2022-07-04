@@ -1,0 +1,19 @@
+<div class="image">
+  {{- $featuredImage := .Resources.GetMatch "images/featured.jpg" -}}
+  {{- with $featuredImage -}}
+  {{- $sizeMD := .Resize "500x webp photo q80" -}}
+  {{- $sizeLG := .Resize "720x webp photo q70" -}}
+  {{- $sizeEX := .Resize "1280x webp photo q60" -}}
+  <img
+    rel="preload"
+    srcset="
+    {{ ($sizeMD | fingerprint).Permalink }} 768w,
+    {{ ($sizeLG | fingerprint).Permalink }} 1024w,
+    {{ ($sizeEX | fingerprint).Permalink }} 1440w
+    "
+    sizes="25vw"
+    src="{{ ($sizeMD | fingerprint ).Permalink }}"
+    alt="{{ .Title }}"
+    />
+  {{- end -}}
+</div>

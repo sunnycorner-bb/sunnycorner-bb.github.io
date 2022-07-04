@@ -9,12 +9,7 @@
       {{ end }}
     </dl>
   </div>
-  <div class="image">
-    {{- $featuredImage := .Resources.GetMatch "images/featured.jpg" -}}
-    {{- with $featuredImage -}}
-    <img src="{{ .Permalink }}" alt="{{ .Title }}" />
-    {{- end -}}
-  </div>
+  {{ partial "room/featured" . }}
 </section>
 <section class="wrapper style1 align-center">
   {{ partial "room/gallery" . }}
