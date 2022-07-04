@@ -1,13 +1,24 @@
 $breakpoints: null;
 
 @import 'libs/vars';
+
+	$font: (
+		family:				('Noto Sans TC', 'Source Sans Pro', Helvetica, sans-serif),
+		family-fixed:		('Noto Sans TC', 'Courier New', monospace),
+		weight:				300,
+		weight-bold:		400,
+		kerning:			-0.05em,
+		kerning-alt:		0.125em
+	);
+
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('/css/fontawesome-all.min.css');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i&display=swap');
 
 /*
 	Story by HTML5 UP
