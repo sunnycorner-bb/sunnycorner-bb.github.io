@@ -9,7 +9,7 @@ metadata:
     * 定價：NT$ 5,580
 type: room
 resources:
-- src: 'images/galleries/*.jpg'
+- src: images/galleries/*.jpg
   title: '房間景觀 #:counter'
 _build:
   render: link

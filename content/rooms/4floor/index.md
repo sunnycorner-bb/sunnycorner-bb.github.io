@@ -8,7 +8,7 @@ metadata:
     * 假日：NT$ 4,280
     * 定價：NT$ 5,980
 resources:
-- src: 'images/galleries/*.jpg'
+- src: images/galleries/*.jpg
   title: '房間景觀 #:counter'
 type: room
 _build:
