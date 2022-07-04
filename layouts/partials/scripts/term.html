@@ -3,12 +3,14 @@
     var $term = document.getElementById('term')
     var $bookingButton = document.getElementById('booking-button')
 
-    $term.addEventListener('change', function(ev) {
-      if (ev.target.checked) {
-        $bookingButton.classList.remove('disabled')
-      } else {
-        $bookingButton.classList.add('disabled')
-      }
-    })
+    if ($term) {
+      $term.addEventListener('change', function(ev) {
+        if (ev.target.checked) {
+          $bookingButton.classList.remove('disabled')
+        } else {
+          $bookingButton.classList.add('disabled')
+        }
+      })
+    }
   })
 </script>

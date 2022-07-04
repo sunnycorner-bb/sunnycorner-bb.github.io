@@ -21,11 +21,12 @@
       {{ block "main" . }}
       {{ end }}
 
+      {{ partial "map" . }}
+
       {{ partial "footer" . }}
     </div>
 
-    {{ partial "scripts/google_map" }}
-    {{ partial "scripts/term" }}
-    {{ partial "scripts/theme" }}
+    {{ partial "scripts/term" . }}
+    {{ partial "scripts/theme" . }}
   </body>
 </html>
