@@ -17,17 +17,5 @@
   </div>
 </section>
 <section class="wrapper style1 align-center">
-  <div class="gallery style2 medium lightbox onscroll-fade-in">
-  {{- $galleries := .Resources.Match "images/galleries/*.jpg" -}}
-  {{- range $galleries -}}
-  <article>
-    <a href="{{ .Permalink }}" class="image">
-      <img src="{{ .Permalink }}" alt="{{ .Name }}" />
-    </a>
-    <div class="caption">
-      <h3>{{ .Name }}</h3>
-    </div>
-  </article>
-  {{- end -}}
-  </div>
+  {{ partial "room/gallery" . }}
 </section>

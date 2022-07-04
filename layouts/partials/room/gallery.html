@@ -1,0 +1,14 @@
+<div class="gallery style2 medium lightbox onscroll-fade-in">
+  {{- $galleries := .Resources.Match "images/galleries/*.jpg" -}}
+  {{- range $galleries -}}
+  {{ $thumbnail := .Resize "480x webp q50" }}
+  <article>
+    <a href="{{ (. | fingerprint).Permalink }}" class="image">
+      <img src="{{ ($thumbnail | fingerprint).Permalink }}" alt="{{ .Name }}" />
+    </a>
+    <div class="caption">
+      <h3>{{ $.Title}} - {{ .Title }}</h3>
+    </div>
+  </article>
+  {{- end -}}
+</div>

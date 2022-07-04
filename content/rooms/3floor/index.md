@@ -1,11 +1,6 @@
 ---
 title: 參樓雙人房
 position: 2
-type: spotlight-reverse
-name: floor3
-image: "/uploads/images/floor3.jpg"
-image_description: 參樓景觀
-gallery: floor3
 metadata:
 - name: 房價
   content: |
@@ -13,6 +8,9 @@ metadata:
     * 假日：NT$ 3,880
     * 定價：NT$ 5,580
 type: room
+resources:
+- src: 'images/galleries/*.jpg'
+  title: '房間景觀 #:counter'
 _build:
   render: link
 ---

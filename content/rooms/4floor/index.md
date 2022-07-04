@@ -1,17 +1,15 @@
 ---
 title: 肆樓雙人房
 position: 3
-name: floor4
-image: "/uploads/images/floor4.jpg"
-image_description: 肆樓景觀
-gallery: floor4
-hide_divider: true
 metadata:
 - name: 房價
   content: |
     * 平日：NT$ 3,980
     * 假日：NT$ 4,280
     * 定價：NT$ 5,980
+resources:
+- src: 'images/galleries/*.jpg'
+  title: '房間景觀 #:counter'
 type: room
 _build:
   render: link

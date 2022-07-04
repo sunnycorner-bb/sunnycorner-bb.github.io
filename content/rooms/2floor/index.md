@@ -1,9 +1,6 @@
 ---
 title: 貳樓雙人房
 position: 1
-image: "/uploads/images/floor2.jpg"
-image_description: 貳樓景觀
-gallery: floor2
 metadata:
 - name: 房價
   content: |
@@ -11,6 +8,9 @@ metadata:
     * 假日：NT$ 2,880
     * 定價：NT$ 4,580
 type: room
+resources:
+- src: 'images/galleries/*.jpg'
+  title: '房間景觀 #:counter'
 _build:
   render: link
 ---
