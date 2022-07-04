@@ -35,12 +35,15 @@
 
 dd {
   &.mobile-adjust {
-    @include breakpoint('<=large') {
-      margin-left: 0;
-    }
+    margin-left: 0;
   }
 
   &.no-adjust {
     margin-left: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
 }
