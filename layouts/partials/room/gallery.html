@@ -4,7 +4,7 @@
   {{ $thumbnail := .Resize "480x webp q50" }}
   <article>
     <a href="{{ (. | fingerprint).Permalink }}" class="image">
-      <img src="{{ ($thumbnail | fingerprint).Permalink }}" alt="{{ .Name }}" width="{{ .Width }}" height="{{ .Height }}" />
+      <img src="{{ ($thumbnail | fingerprint).Permalink }}" alt="{{ .Name }}" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" />
     </a>
     <div class="caption">
       <h3>{{ $.Title}} - {{ .Title }}</h3>
