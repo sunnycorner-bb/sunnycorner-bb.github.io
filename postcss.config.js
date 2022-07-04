@@ -6,6 +6,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   }
 });
 
+throw new Error('DEBUG FOR DISABLE POSTCSS')
+
 module.exports = {
      plugins: [
          ...(
