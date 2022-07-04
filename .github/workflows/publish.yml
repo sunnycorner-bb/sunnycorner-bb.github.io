@@ -44,7 +44,7 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - run: cat hugo_stags.json
+      - run: cat hugo_stats.json
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
