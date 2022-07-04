@@ -10,7 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="{{ .Site.Params.description }}">
     <title>{{ block "title" . }}{{ .Site.Title }} | {{ .Site.Params.description }}{{ end }}</title>
-    {{ partial "head/style" }}
+    {{- partial "head/style" . -}}
+    {{- partial "head/json-ld" . -}}
+    {{- template "_internal/opengraph.html" . -}}
+    {{- template "_internal/twitter_cards.html" . -}}
   </head>
   <body class="is-preload">
 
