@@ -6,10 +6,6 @@ module.exports = {
            process.env.HUGO_ENVIRONMENT === 'production' ?
            [
              purgecss({
-               content: ['./**/*.html']
-             })
-           ] : [
-             purgecss({
                content: ['./hugo_stats.json'],
                defaultExtractor: content => {
                  const els = JSON.parse(content).htmlElements;
@@ -21,7 +17,7 @@ module.exports = {
                },
                safelist: []
              })
-           ]
+           ] : []
          )
      ]
  };
