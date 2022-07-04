@@ -1,2 +1,12 @@
-{{ $style := resources.Get "css/main.css" | resources.Minify | fingerprint }}
+{{- $sass := resources.Get "css/main.scss" -}}
+{{-
+  $sassOptions := (dict
+    "outputStyle" "compressed"
+    "enableSourceMap" (not hugo.IsProduction)
+    "includePaths" (slice
+      "vendor/theme/assets/sass"
+      )
+    )
+-}}
+{{- $style := $sass | resources.ToCSS $sassOptions | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
