@@ -1,2 +1,9 @@
 {{ define "main" }}
+  {{ range $idx, $room := sort (where .Site.Pages "Type" "room") "Params.position" }}
+    {{ if modBool $idx 2 }}
+      {{ partial "room-reverse" $room }}
+    {{ else }}
+      {{ partial "room" $room }}
+    {{ end }}
+  {{ end }}
 {{ end }}

@@ -1,0 +1,20 @@
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+  <div class="content">
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    <dl>
+      {{ range .Params.metadata }}
+      <dt>{{ .name }}</dt>
+      <dd class="mobile-adjust">{{ .content | markdownify }}</dd>
+      {{ end }}
+    </dl>
+  </div>
+  <div class="image">
+    {{- $featuredImage := .Resources.GetMatch "images/featured.jpg" -}}
+    {{- with $featuredImage -}}
+    <img src="{{ .Permalink }}" alt="{{ .Title }}" />
+    {{- end -}}
+  </div>
+</section>
+<section class="wrapper style1 align-center">
+</section>
