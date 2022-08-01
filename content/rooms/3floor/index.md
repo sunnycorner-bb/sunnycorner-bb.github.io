@@ -4,9 +4,9 @@ position: 2
 metadata:
 - name: 房價
   content: |
-    * 平日：NT$ 3,580
-    * 假日：NT$ 3,880
-    * 定價：NT$ 5,580
+    * 平日：NT$ 3,600
+    * 假日：NT$ 4,000
+    * 定價：NT$ 5,600
 type: room
 resources:
 - src: images/galleries/*.jpg
