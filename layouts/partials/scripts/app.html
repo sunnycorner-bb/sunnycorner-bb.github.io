@@ -1,0 +1,8 @@
+{{
+  $jsOpts := (dict
+    "targetPath" "main.js"
+    "minify" hugo.IsProduction
+  )
+}}
+{{ $js := resources.Get "app/main.js" | js.Build $jsOpts }}
+<script src="{{ $js.RelPermalink }}" data-turbo-track="reload" defer></script>

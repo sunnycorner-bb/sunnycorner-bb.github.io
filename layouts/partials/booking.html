@@ -9,14 +9,14 @@
       <dt>定價時段</dt><dd class="no-adjust">農曆春節期間</dd>
     </dl>
     <hr />
-    <form>
+    <form data-controller="term">
       <div class="fields">
         <div class="field">
-          <input type="checkbox" name="term" id="term">
+          <input type="checkbox" name="term" id="term" data-action="change->term#confirm">
           <label for="term">我同意訂房須知</label>
         </div>
         <div class="field">
-          <a href="https://booking.owlting.com/sunnycorner" target="_blank" class="button big wide disabled" id="booking-button">開始預訂</a>
+          <a href="https://booking.owlting.com/sunnycorner" target="_blank" class="button big wide disabled" id="booking-button" data-term-target="button">開始預訂</a>
         </div>
       </div>
     </form>
