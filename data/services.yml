@@ -1,7 +1,5 @@
 - name: Queen Size 加大雙人床
   icon: fa-bed
-- name: 盥洗用具
-  icon: fa-tooth
 - name: Nespresso 膠囊咖啡機
   icon: fa-coffee
 - name: 快煮壺、茶包
@@ -10,8 +8,6 @@
   icon: fa-tv
 - name: 無線網路 WiFi
   icon: fa-wifi
-- name: 兩份西式早餐
-  icon: fa-utensils
 - name: 浴巾毛巾、拖鞋
   icon: fa-shower
 - name: 露臺
