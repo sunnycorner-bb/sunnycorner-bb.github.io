@@ -1,8 +1,6 @@
 - name: Queen Size 加大雙人床
   icon: fa-bed
-- name: Nespresso 膠囊咖啡機
-  icon: fa-coffee
-- name: 快煮壺、茶包
+- name: 快煮壺、茶包、咖啡膠囊
   icon: fa-mug-hot
 - name: 電視 MOD
   icon: fa-tv
