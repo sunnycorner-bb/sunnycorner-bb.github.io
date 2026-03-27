@@ -11,7 +11,7 @@ type: room
 resources:
 - src: images/galleries/*.jpg
   title: '房間景觀 #:counter'
-_build:
+build:
   render: false
 ---
 

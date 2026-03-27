@@ -11,14 +11,14 @@ This is the website for **光之角落 SunnyCorner B&B** (a bed & breakfast in H
 - **Install dependencies**: `yarn install`
 - **Local development server**: `hugo server`
 - **Production build**: `HUGO_ENVIRONMENT=production hugo --minify`
-- Hugo version: **0.135.0** (extended edition required for Sass support)
+- Hugo version: **0.152.2** (extended edition required for Sass support)
 - Node version: **20**
 
 ## Architecture
 
 ### Hugo Static Site
 
-- `config.toml` — site configuration, Google Maps keys, social links
+- `hugo.toml` — site configuration, Google Maps keys, social links
 - `content/rooms/` — room pages organized by floor (2floor, 3floor, 4floor), each with front matter defining room metadata (name, images, position, price, booking link)
 - `data/services.yml` — shared amenities list rendered on room pages
 - `layouts/` — Hugo templates; index page iterates rooms sorted by `position`, alternating between `room` and `room-reverse` partials
